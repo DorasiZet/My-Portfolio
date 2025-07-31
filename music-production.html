@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Production - Dorasi Zevta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html#home">DorasiZev</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="back-to-main-btn" id="back-btn">Back</a></li>
+            </ul>
+            <div class="theme-toggle"><i class="fas fa-moon"></i></div>
+            <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        </div>
+    </nav>
+    <section class="hero hero-centered" style="position:relative; overflow:hidden;">
+        <img src="musiccc.gif" alt="Music Production GIF" style="position:absolute; left:0; top:0; width:100%; height:100%; object-fit:cover; z-index:0; opacity:0.25; pointer-events:none;" />
+        <div class="hero-container" style="position:relative; z-index:1;">
+            <div class="hero-content">
+                <h1 class="hero-title">Music Production</h1>
+                <p class="hero-description">A portfolio of my music compositions, productions, and sound design projects.</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            
+            <!-- Music Platform Tabs -->
+            <div class="music-tabs">
+                <button class="music-tab active" data-platform="soundcloud">
+                    <i class="fab fa-soundcloud"></i>
+                    SoundCloud
+                </button>
+                <button class="music-tab" data-platform="spotify">
+                    <i class="fab fa-spotify"></i>
+                    Spotify
+                </button>
+                <button class="music-tab" data-platform="apple">
+                    <i class="fab fa-apple"></i>
+                    Apple Music
+                </button>
+                <button class="music-tab" data-platform="youtube">
+                    <i class="fab fa-youtube"></i>
+                    YouTube
+                </button>
+            </div>
+
+            <!-- SoundCloud Content -->
+            <div class="music-content active" data-platform="soundcloud">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image"><i class="fas fa-music"></i></div>
+                        <div class="project-content">
+                            <h3>Techno Vibes</h3>
+                            <p>Deep techno track with industrial elements and driving basslines.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-soundcloud"></i> Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"><i class="fas fa-music"></i></div>
+                        <div class="project-content">
+                            <h3>Future Bass</h3>
+                            <p>Melodic future bass with emotional chord progressions.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-soundcloud"></i> Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spotify Content -->
+            <div class="music-content" data-platform="spotify">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image"><i class="fas fa-music"></i></div>
+                        <div class="project-content">
+                            <h3>Hybrid Trap</h3>
+                            <p>Aggressive hybrid trap with heavy 808s and trap elements.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-spotify"></i> Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"><i class="fas fa-music"></i></div>
+                        <div class="project-content">
+                            <h3>Deep House</h3>
+                            <p>Smooth deep house with groovy basslines and atmospheric pads.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-spotify"></i> Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apple Music Content -->
+            <div class="music-content" data-platform="apple">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image"><i class="fas fa-music"></i></div>
+                        <div class="project-content">
+                            <h3>Tech House</h3>
+                            <p>Groovy tech house with minimal elements and driving rhythms.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-apple"></i> Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"><i class="fas fa-music"></i></div>
+                        <div class="project-content">
+                            <h3>Festival Trap</h3>
+                            <p>High-energy festival trap designed for big crowds.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-apple"></i> Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YouTube Content -->
+            <div class="music-content" data-platform="youtube">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image"><i class="fas fa-music"></i></div>
+                        <div class="project-content">
+                            <h3>Music Production Tutorial</h3>
+                            <p>Step-by-step guide on creating electronic music in FL Studio.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-youtube"></i> Watch</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"><i class="fas fa-music"></i></div>
+                        <div class="project-content">
+                            <h3>Live Performance</h3>
+                            <p>Live DJ set showcasing various EDM genres and mixing techniques.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-youtube"></i> Watch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Built by Dorasi Zevta. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('back-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (window.history.length > 1) {
+          window.history.back();
+        } else {
+          window.location.href = 'creative-work.html';
+        }
+      });
+      
+      // Music Platform Tabs Functionality
+      const musicTabs = document.querySelectorAll('.music-tab');
+      const musicContents = document.querySelectorAll('.music-content');
+      
+      musicTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const platform = tab.getAttribute('data-platform');
+          
+          // Remove active class from all tabs and contents
+          musicTabs.forEach(t => t.classList.remove('active'));
+          musicContents.forEach(c => c.classList.remove('active'));
+          
+          // Add active class to clicked tab and corresponding content
+          tab.classList.add('active');
+          document.querySelector(`.music-content[data-platform="${platform}"]`).classList.add('active');
+        });
+      });
+    </script>
+</body>
+</html> 

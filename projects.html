@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Projects - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="site-loader">
+        <div class="loader-content">
+            <span class="loader-name">Dorasi Zevta</span>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- More Projects Section -->
+    <section class="projects" style="margin-top: 100px;">
+        <div class="container">
+            <h2 class="section-title">All Projects</h2>
+            <div class="projects-main-menu">
+                <button class="main-tab active" data-group="logical">Logical Work</button>
+                <button class="main-tab" data-group="creative">Creative Work</button>
+            </div>
+            <div class="projects-group" data-group="logical">
+                <div class="projects-menu">
+                    <button class="projects-tab active" data-category="cyber">Cyber Security</button>
+                    <button class="projects-tab" data-category="web">Web</button>
+                    <button class="projects-tab" data-category="app">Application</button>
+                    <button class="projects-tab" data-category="game">Game</button>
+                </div>
+                <div class="projects-categories">
+                    <div class="projects-grid project-category" data-category="cyber">
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-shield-alt"></i></div>
+                            <div class="project-content">
+                                <h3>Penetration Testing Toolkit</h3>
+                                <p>Suite of tools for vulnerability scanning and reporting.</p>
+                                <div class="project-tech"><span>Python</span><span>Nmap</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Code</a></div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-lock"></i></div>
+                            <div class="project-content">
+                                <h3>Password Manager</h3>
+                                <p>Secure password storage with encryption and autofill.</p>
+                                <div class="project-tech"><span>React</span><span>Node.js</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-grid project-category" data-category="web" style="display:none;">
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-globe"></i></div>
+                            <div class="project-content">
+                                <h3>Portfolio Website</h3>
+                                <p>Modern, responsive portfolio with animations and dark mode.</p>
+                                <div class="project-tech"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Code</a></div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-store"></i></div>
+                            <div class="project-content">
+                                <h3>E-Commerce Platform</h3>
+                                <p>Full-stack e-commerce solution with payment integration.</p>
+                                <div class="project-tech"><span>React</span><span>Node.js</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-grid project-category" data-category="app" style="display:none;">
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="project-content">
+                                <h3>Task Manager App</h3>
+                                <p>Organize tasks, set reminders, and track progress on mobile.</p>
+                                <div class="project-tech"><span>Flutter</span><span>Firebase</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Code</a></div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-notes-medical"></i></div>
+                            <div class="project-content">
+                                <h3>Health Tracker</h3>
+                                <p>Monitor health metrics and visualize trends over time.</p>
+                                <div class="project-tech"><span>Kotlin</span><span>Android</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-grid project-category" data-category="game" style="display:none;">
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-gamepad"></i></div>
+                            <div class="project-content">
+                                <h3>2D Platformer</h3>
+                                <p>Fun and challenging platform game with custom levels.</p>
+                                <div class="project-tech"><span>Unity</span><span>C#</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Code</a></div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-chess-knight"></i></div>
+                            <div class="project-content">
+                                <h3>Chess AI</h3>
+                                <p>Play chess against an AI with multiple difficulty levels.</p>
+                                <div class="project-tech"><span>Python</span><span>Pygame</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-group" data-group="creative" style="display:none;">
+                <div class="projects-menu">
+                    <button class="projects-tab active" data-category="design">Design</button>
+                    <button class="projects-tab" data-category="music">Music</button>
+                </div>
+                <div class="projects-categories">
+                    <div class="projects-grid project-category" data-category="design">
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-paint-brush"></i></div>
+                            <div class="project-content">
+                                <h3>Brand Identity Kit</h3>
+                                <p>Logo, color palette, and typography for a startup brand.</p>
+                                <div class="project-tech"><span>Figma</span><span>Illustrator</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Design</a></div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-vector-square"></i></div>
+                            <div class="project-content">
+                                <h3>UI Kit</h3>
+                                <p>Reusable UI components for web and mobile apps.</p>
+                                <div class="project-tech"><span>Figma</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Design</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-grid project-category" data-category="music" style="display:none;">
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-music"></i></div>
+                            <div class="project-content">
+                                <h3>Music Visualizer</h3>
+                                <p>Animated visualizer that reacts to music in real time.</p>
+                                <div class="project-tech"><span>JavaScript</span><span>Web Audio API</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Code</a></div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image"><i class="fas fa-headphones"></i></div>
+                            <div class="project-content">
+                                <h3>Beat Maker</h3>
+                                <p>Create and mix beats with a simple, interactive interface.</p>
+                                <div class="project-tech"><span>React</span><span>Howler.js</span></div>
+                                <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2.5rem;">
+                <a href="index.html#projects" class="btn btn-secondary">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 

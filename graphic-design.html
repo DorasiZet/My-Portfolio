@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design - Dorasi Zevta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="graphic-design.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html#home">DorasiZev</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="back-to-main-btn" id="back-btn">Back</a></li>
+            </ul>
+            <div class="theme-toggle"><i class="fas fa-moon"></i></div>
+            <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        </div>
+    </nav>
+    <section class="hero hero-centered" style="position:relative; overflow:hidden;">
+        <img src="animation design GIF by Mathew Lucas .gif" alt="Geometric Orange GIF" style="position:absolute; left:0; top:0; width:100%; height:100%; object-fit:cover; z-index:0; opacity:0.25; pointer-events:none;" />
+        <div class="hero-container" style="position:relative; z-index:1;">
+            <div class="hero-content">
+                <h1 class="hero-title">Graphic Design</h1>
+                <p class="hero-description">This is a showcase of my creative visual works and digital art.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Bauhaus/Flat/Bold Section Below Hero -->
+    <section class="gd-bauhaus-main">
+        <div class="gd-bauhaus-left">
+            <div class="gd-bauhaus-headline">Bold Visuals</div>
+            <div class="gd-bauhaus-subtitle">A showcase of creative poster design, illustration, and visual storytelling. Explore the intersection of art and communication.</div>
+            <div class="gd-bauhaus-socials">
+                <a href="#" class="gd-bauhaus-social" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="gd-bauhaus-social" title="Figma" target="_blank"><i class="fab fa-figma"></i></a>
+                <a href="#" class="gd-bauhaus-social" title="Behance" target="_blank"><i class="fab fa-behance"></i></a>
+            </div>
+            <div class="gd-bauhaus-stats">
+                <div class="gd-bauhaus-stat">
+                    <div class="gd-bauhaus-stat-number">+50</div>
+                    <div class="gd-bauhaus-stat-label">Posters & Visuals Created</div>
+                </div>
+                <div class="gd-bauhaus-stat">
+                    <div class="gd-bauhaus-stat-number">+10</div>
+                    <div class="gd-bauhaus-stat-label">Clients & Collaborations</div>
+                </div>
+            </div>
+        </div>
+        <div class="gd-bauhaus-right">
+            <div class="gd-bauhaus-photo-block">
+                <div class="gd-bauhaus-photo-placeholder">Working on it<br></div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio-section gd-flat-bauhaus">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="projects-grid">
+                <!-- Portfolio items go here -->
+                <div class="project-card">
+                    <div class="project-image"><i class="fas fa-image"></i></div>
+                    <div class="project-content">
+                        <h3>Sample Design</h3>
+                        <p>Working on it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Built by Dorasi Zevta. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      document.getElementById('back-btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        if (window.history.length > 1) {
+          window.history.back();
+        } else {
+          window.location.href = 'creative-work.html';
+        }
+      });
+    </script>
+</body>
+</html> 

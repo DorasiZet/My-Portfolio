@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Work - Dorasi Zevta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html#home">DorasiZev</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero hero-centered hero-skeleton-bg">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Creative Work & Logical Work</h1>
+                <div class="hero-typing-container" style="margin-bottom:1.2rem;">
+                    <span id="creative-typing" class="exp-typing"></span>
+                </div>
+                <p class="hero-description">This is a showcase of all my work.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Creative Work Section -->
+    <section class="creative-logical-section">
+        <div class="container">
+            <h2 class="section-title">Creative Work</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="graphic-design.html" class="project-link-overlay"></a>
+                    <div class="project-image"><i class="fas fa-paint-brush"></i></div>
+                    <div class="project-content">
+                        <h3>Graphic Design</h3>
+                        <p class="project-description">A collection of posters created for both client work and personal projects, blending custom illustrations with bold typography to communicate clear, impactful messages. Designed using Photoshop and Canva, each piece reflects a strong visual identity while balancing creativity and purpose.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="3d-art.html" class="project-link-overlay"></a>
+                    <div class="project-image"><i class="fas fa-cube"></i></div>
+                    <div class="project-content">
+                        <h3>3D Art</h3>
+                        <p class="project-description">A series of stylized 3D artworks created using MagicaVoxel, exploring form, color, and minimalism through voxel-based design. These pieces range from architectural scenes to character concepts, combining creativity with the charm of pixel-like 3D aesthetics.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="music-production.html" class="project-link-overlay"></a>
+                    <div class="project-image"><i class="fas fa-music"></i></div>
+                    <div class="project-content">
+                        <h3>Music Production</h3>
+                        <p class="project-description">A personal project exploring multiple EDM genres, including Techno, Tech House, Hybrid Trap, Festival Trap, Future Bass, and Deep House. Created using FL Studio and Ableton Live, focusing on sound design, arrangement, and mixing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Logical Work Section -->
+    <section class="creative-logical-section">
+        <div class="container">
+            <h2 class="section-title">Logical Work</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="web-development.html" class="project-link-overlay"></a>
+                    <div class="project-image"><i class="fas fa-code"></i></div>
+                    <div class="project-content">
+                        <h3>Web Development</h3>
+                        <p class="project-description">Personal projects focused on crafting responsive and interactive user interfaces using HTML, CSS, and JavaScript. Each website emphasizes clean design, usability, and front-end best practices.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="app-development.html" class="project-link-overlay"></a>
+                    <div class="project-image"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="project-content">
+                        <h3>App Development</h3>
+                        <p class="project-description">Personal projects centered on designing and developing functional mobile and web apps. Focused on user-friendly interfaces, smooth performance, and practical features tailored for everyday use.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="game-development.html" class="project-link-overlay"></a>
+                    <div class="project-image"><i class="fas fa-gamepad"></i></div>
+                    <div class="project-content">
+                        <h3>Game Development</h3>
+                        <p class="project-description">Personal game development projects created using Roblox Studio, focusing on gameplay design, world-building, and creating interactive experiences within the Roblox platform.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"><i class="fas fa-robot"></i></div>
+                    <div class="project-content">
+                        <h3>Robotic (Arduino)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Back to Main Site Button -->
+    <div class="back-to-main-btn-wrapper">
+        <a href="#" class="back-to-main-btn" id="back-btn">Back to Main Site</a>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Built by Dorasi Zevta. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('back-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html> 
